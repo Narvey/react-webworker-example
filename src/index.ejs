@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Title</title>
+
+        <!-- Mobile tags -->
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, width=device-width, height=device-height">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <!-- HTML Metadata -->
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+
+        <meta name='robots' content='index,follow'>
+        <meta name='revisit-after' content='7 days'>
+        <meta name='revised' content='Sunday, July 18th, 2010, 5:15 pm'>
+
+        <meta name='copyright' content='company name'>
+        <meta name='author' content='name, email@hotmail.com'>
+        <meta name='designer' content='name, email@hotmail.com'>
+
+        <!-- Permalink location of the page (full https://www.example.com format) -->
+        <link rel="canonical" href="">
+
+        <!-- Atom/RSS feeds -->
+        <link rel='alternate' type='application/rss+xml' title='RSS' href='http://www.bugmartini.com/feed/'>
+        <link rel='alternate' type='application/atom+xml' title='Atom 0.3' href='https://example.com/feed.atom'>
+
+        <!-- Schema.org micro data -->
+        <meta itemprop="name" content="">
+        <meta itemprop="description" content="">
+        <meta itemprop="image" content="images/icons/favicon-194x194.png">
+
+        <!-- Facebook open graph -->
+        <meta property="og:url" content="">
+        <meta property="og:title" content="">
+        <meta property="og:image" content="images/icons/favicon-194x194.png">
+        <meta property="og:site_name" content="">
+        <meta property="og:description" content="">
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="">
+        <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="images/icons/favicon-194x194.png">
+
+        <!-- Icons -->
+        <!-- Apple iOS Icons -->
+        <link rel="apple-touch-icon" sizes="57x57" href="images/icons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="images/icons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="images/icons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="images/icons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="images/icons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="images/icons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="images/icons/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon-180x180.png">
+        <!-- HTML Icons -->
+        <link rel="shortcut icon" type="image/png" href="images/icons/favicon-32x32.png" sizes="32x32">
+        <link rel="shortcut icon" type="image/png" href="images/icons/favicon-194x194.png" sizes="194x194">
+        <link rel="shortcut icon" type="image/png" href="images/icons/favicon-96x96.png" sizes="96x96">
+        <link rel="shortcut icon" type="image/png" href="images/icons/favicon-16x16.png" sizes="16x16">
+        <!-- Android Icons and top bar color -->
+        <link rel="manifest" href="images/icons/manifest.json">
+        <meta name="theme-color" content="#ffffff">
+        <!-- Windows Phone/Windows 10 Icons and metro tile color -->
+        <meta name="msapplication-TileImage" content="images/icons/mstile-144x144.png">
+        <meta name="msapplication-TileColor" content="#ed1c24">
+        <!-- Custom styles for this page only -->
+        <style>
+            .column
+            {
+                background-color: #fff8ee;
+            }
+
+            header, footer
+            {
+                background-color: #333;
+            }
+
+            main .row-wrapper
+            {
+                background: #025ad6;
+                background: linear-gradient(to right, #025ad6, #013a8a);
+            }
+
+            #image-row
+            {
+                background: #504653;
+                background: linear-gradient(to right, #504653, #f6d3a8);
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="all">
+            <header class="row-wrapper">
+
+                <div class="row">
+
+                        <div class="column column-20">
+                            <span>Page Title</span>
+                        </div><!-- .column -->
+
+                        <div class="column column-80">
+                            Other stuff
+                        </div><!-- .column -->
+
+                </div><!-- .row -->
+
+            </header>
+
+            <main>
+
+                <div class="row-wrapper">
+                    <div class="row">
+
+                        <div id="todo" class="column column-100">
+
+                        </div><!-- .column -->
+
+                    </div><!-- .row -->
+                </div><!-- .row-wrapper -->
+
+            </main>
+
+            <footer class="row-wrapper">
+
+                <div class="row">
+
+                    <div class="column column-25">
+                        Footer Col
+                    </div><!-- .column -->
+
+                    <div class="column column-25">
+                        Footer Col
+                    </div><!-- .column -->
+
+                    <div class="column column-25">
+                        Footer Col
+                    </div><!-- .column -->
+
+                    <div class="column column-25">
+                        Footer Col
+                    </div><!-- .column -->
+
+                </div><!-- .row -->
+
+            </footer>
+
+        </div><!-- #all -->
+
+        <!-- End of body Javascript  -->
+        <!-- ======================================================================================= -->
+
+        <% for (var chunk in htmlWebpackPlugin.assets) { %>
+          <script src="{%= htmlWebpackPlugin.assets[chunk] %}"></script>
+        <% } %>
+
+    </body>
+</html>

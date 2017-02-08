@@ -1,0 +1,91 @@
+/** 
+ * The MAIN less file
+ * ===========================================================================
+ *
+ * Use this file to set site-specific styles. Most of the site css should be in this file.
+ * Compile this file as your final site.css output.
+ * If you don't want to use the content of another less file, just remove it from the imports.
+ */
+
+@import "lib.less";
+@import "colors.less";
+@import "typography.less";
+@import "row.less";
+
+
+
+// Some opinionated defaults 
+//====================================================================
+
+/*
+ * Why is the html padding non-zero. Also has any later element have no padding or margin too by inhertiance.
+ */
+html
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+::selection 
+{
+    background: @selection-color;
+    text-shadow: none;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+a
+{
+    //TODO: change these colors in colors.less
+    text-decoration: none;
+    color: @link-color;
+
+    &:visited {color: @visited-link-color;}
+    &:hover { color: @hover-link-color; text-decoration: underline;}
+    &:active {color: @active-link-color; text-decoration: underline;}
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video
+{
+    vertical-align: middle;
+}
+
+
+/*
+ * A better looking default horizontal rule
+ */
+hr
+{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+
