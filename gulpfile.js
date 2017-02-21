@@ -26,5 +26,10 @@ gulp.task('clean', function (cb) {
   ]);
 })
 
-gulp.task('build', ['clean'], shell.task(['webpack --color']));
-gulp.task('server', ['build'], shell.task(['webpack-dev-server --color']));
+var opts = {
+  verbose: true, //Echo command
+  env: { FORCE_COLOR: "true"} //Allow for colored output
+}
+
+gulp.task('build', ['clean'], shell.task(['npm run-script build'], opts));
+gulp.task('server', ['build'], shell.task(['npm run-script serve'], opts));

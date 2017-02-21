@@ -1,11 +1,18 @@
 {
   "name": "iConnect",
   "version": "0.0.1",
-  "description": "A redo of the iConnect frontend",
-  "main": "build/server.js",
-  "author": "Matthew Prichard <mprichard@insurancetechnologies.com>",
-  "homepage": "https://iconnect.insurancetechnologies.com",
+  "description": "A React starter package with webpack, gulp, less, and typescript.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prichmp/reguwety-starter.git"
+  },
+  "bugs": { "issues": "https://github.com/prichmp/reguwety-starter/issues" },
+  "author": "Matthew Prichard",
   "license": "MIT",
+  "scripts":{
+    "build": "webpack",
+    "serve": "webpack-dev-server"
+  },
   "devDependencies": {
     "@types/base16": "^1.0.1",
     "@types/chai": "^3.4.34",
@@ -49,6 +56,7 @@
     "file-loader": "^0.9.0",
     "gulp": "^3.9.1",
     "gulp-shell": "^0.5.2",
+    "html-webpack-plugin": "^2.28.0",
     "isomorphic-style-loader": "^1.1.0",
     "istanbul-instrumenter-loader": "^0.2.0",
     "json-loader": "^0.5.4",
@@ -63,6 +71,8 @@
     "karma-phantomjs-launcher": "^1.0.2",
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^2.0.1",
+    "less": "^2.7.2",
+    "less-loader": "^2.2.3",
     "mocha": "^3.2.0",
     "phantomjs-prebuilt": "^2.1.14",
     "postcss-assets": "^4.1.0",

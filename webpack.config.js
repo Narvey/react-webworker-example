@@ -36,7 +36,7 @@ var config = {
       // only- means to only hot reload for successful updates
       'webpack/hot/only-dev-server',
 
-      './src/scripts/index.jsx',
+      './src/scripts/index.tsx',
       './src/styles/site.less'
     ]
   },
