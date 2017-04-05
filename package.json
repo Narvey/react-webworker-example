@@ -6,10 +6,12 @@
     "type": "git",
     "url": "https://github.com/prichmp/reguwety-starter.git"
   },
-  "bugs": { "issues": "https://github.com/prichmp/reguwety-starter/issues" },
+  "bugs": {
+    "issues": "https://github.com/prichmp/reguwety-starter/issues"
+  },
   "author": "Matthew Prichard",
   "license": "MIT",
-  "scripts":{
+  "scripts": {
     "build": "webpack",
     "serve": "webpack-dev-server"
   },
@@ -19,7 +21,6 @@
     "@types/classnames": "0.0.32",
     "@types/enzyme": "^2.7.1",
     "@types/history": "^4.5.0",
-    "@types/isomorphic-fetch": "0.0.31",
     "@types/mocha": "^2.2.38",
     "@types/node": "^7.0.0",
     "@types/react": "^15.0.0",
