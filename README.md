@@ -1,5 +1,4 @@
-# reguwety-starter
-A React-Gulp-Webpack-Typscript starter project.
+# react-webworker-example
 
 
 ## Installation
