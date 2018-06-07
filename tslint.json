@@ -8,8 +8,9 @@
       true,
       "spaces"
     ],
+    "semicolon": [ false, "never" ],
     "quotemark": [
-      true,
+      false,
       "single",
       "jsx-double"
     ],

@@ -38,7 +38,8 @@ var config = {
 
       './src/scripts/index.tsx',
       './src/styles/site.less'
-    ]
+    ],
+    worker: "./src/scripts/me.worker.js"
   },
 
   output: {
