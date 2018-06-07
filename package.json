@@ -1,15 +1,13 @@
 {
-  "name": "iConnect",
-  "version": "0.0.1",
-  "description": "A React starter package with webpack, gulp, less, and typescript.",
+  "name": "react-webworker-example",
+  "description": "one way get a (real) webworker operating in React.",
+  "version": "0.12.0",
+  "main": "src/frontend/index.js",
+  "author": "Narvey",
   "repository": {
     "type": "git",
-    "url": "https://github.com/prichmp/reguwety-starter.git"
+    "url": "git+https://github.com/Narvey/react-webworker-example.git"
   },
-  "bugs": {
-    "issues": "https://github.com/prichmp/reguwety-starter/issues"
-  },
-  "author": "Matthew Prichard",
   "license": "MIT",
   "scripts": {
     "build": "webpack",
